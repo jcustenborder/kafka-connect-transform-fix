@@ -1,0 +1,95 @@
+{
+  "message" : "8=FIX.4.4\u00019=70\u000135=4\u000149=A\u000156=XYZ\u000134=129\u000152=20100302-19:38:21\u000143=Y\u000157=LOL\u0001123=Y\u000136=175\u000110=192\u0001",
+  "struct" : {
+    "schema" : {
+      "name" : "fix44.SequenceReset",
+      "type" : "STRUCT",
+      "isOptional" : false,
+      "fieldSchemas" : {
+        "CheckSum" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "10"
+          },
+          "isOptional" : true
+        },
+        "GapFillFlag" : {
+          "type" : "BOOLEAN",
+          "parameters" : {
+            "fix.field" : "123"
+          },
+          "isOptional" : true
+        },
+        "NewSeqNo" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "36"
+          },
+          "isOptional" : true
+        },
+        "Signature" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "89"
+          },
+          "isOptional" : true
+        },
+        "SignatureLength" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "93"
+          },
+          "isOptional" : true
+        }
+      }
+    },
+    "fieldValues" : [ {
+      "name" : "CheckSum",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "10"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "GapFillFlag",
+      "schema" : {
+        "type" : "BOOLEAN",
+        "parameters" : {
+          "fix.field" : "123"
+        },
+        "isOptional" : true
+      },
+      "storage" : true
+    }, {
+      "name" : "NewSeqNo",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "36"
+        },
+        "isOptional" : true
+      },
+      "storage" : 175
+    }, {
+      "name" : "Signature",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "89"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SignatureLength",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "93"
+        },
+        "isOptional" : true
+      }
+    } ]
+  }
+}

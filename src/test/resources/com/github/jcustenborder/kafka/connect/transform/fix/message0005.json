@@ -1,0 +1,2577 @@
+{
+  "message" : "8=FIX.4.4\u00019=122\u000135=D\u000134=215\u000149=CLIENT12\u000152=20100225-19:41:57.316\u000156=B\u00011=Marcel\u000111=13346\u000121=1\u000140=2\u000144=5\u000154=1\u000159=0\u000160=20100225-19:39:52.020\u000110=072\u0001",
+  "struct" : {
+    "schema" : {
+      "name" : "fix44.NewOrderSingle",
+      "type" : "STRUCT",
+      "isOptional" : false,
+      "fieldSchemas" : {
+        "Account" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "1"
+          },
+          "isOptional" : true
+        },
+        "AccountType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "581"
+          },
+          "isOptional" : true
+        },
+        "AcctIDSource" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "660"
+          },
+          "isOptional" : true
+        },
+        "AgreementCurrency" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "918"
+          },
+          "isOptional" : true
+        },
+        "AgreementDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "915"
+          },
+          "isOptional" : true
+        },
+        "AgreementDesc" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "913"
+          },
+          "isOptional" : true
+        },
+        "AgreementID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "914"
+          },
+          "isOptional" : true
+        },
+        "AllocID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "70"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkCurveCurrency" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "220"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkCurveName" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "221"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkCurvePoint" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "222"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkPrice" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "662"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkPriceType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "663"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkSecurityID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "699"
+          },
+          "isOptional" : true
+        },
+        "BenchmarkSecurityIDSource" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "761"
+          },
+          "isOptional" : true
+        },
+        "BookingType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "775"
+          },
+          "isOptional" : true
+        },
+        "BookingUnit" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "590"
+          },
+          "isOptional" : true
+        },
+        "CFICode" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "461"
+          },
+          "isOptional" : true
+        },
+        "CPProgram" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "875"
+          },
+          "isOptional" : true
+        },
+        "CPRegType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "876"
+          },
+          "isOptional" : true
+        },
+        "CancellationRights" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "480"
+          },
+          "isOptional" : true
+        },
+        "CashMargin" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "544"
+          },
+          "isOptional" : true
+        },
+        "CashOrderQty" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "152"
+          },
+          "isOptional" : true
+        },
+        "CheckSum" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "10"
+          },
+          "isOptional" : true
+        },
+        "ClOrdID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "11"
+          },
+          "isOptional" : true
+        },
+        "ClOrdLinkID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "583"
+          },
+          "isOptional" : true
+        },
+        "ClearingFeeIndicator" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "635"
+          },
+          "isOptional" : true
+        },
+        "CommCurrency" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "479"
+          },
+          "isOptional" : true
+        },
+        "CommType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "13"
+          },
+          "isOptional" : true
+        },
+        "Commission" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "12"
+          },
+          "isOptional" : true
+        },
+        "ComplianceID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "376"
+          },
+          "isOptional" : true
+        },
+        "ContractMultiplier" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "231"
+          },
+          "isOptional" : true
+        },
+        "ContractSettlMonth" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "667"
+          },
+          "isOptional" : true
+        },
+        "CountryOfIssue" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "470"
+          },
+          "isOptional" : true
+        },
+        "CouponPaymentDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "224"
+          },
+          "isOptional" : true
+        },
+        "CouponRate" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "223"
+          },
+          "isOptional" : true
+        },
+        "CoveredOrUncovered" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "203"
+          },
+          "isOptional" : true
+        },
+        "CreditRating" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "255"
+          },
+          "isOptional" : true
+        },
+        "Currency" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "15"
+          },
+          "isOptional" : true
+        },
+        "CustOrderCapacity" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "582"
+          },
+          "isOptional" : true
+        },
+        "DatedDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "873"
+          },
+          "isOptional" : true
+        },
+        "DayBookingInst" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "589"
+          },
+          "isOptional" : true
+        },
+        "DeliveryType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "919"
+          },
+          "isOptional" : true
+        },
+        "Designation" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "494"
+          },
+          "isOptional" : true
+        },
+        "DiscretionInst" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "388"
+          },
+          "isOptional" : true
+        },
+        "DiscretionLimitType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "843"
+          },
+          "isOptional" : true
+        },
+        "DiscretionMoveType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "841"
+          },
+          "isOptional" : true
+        },
+        "DiscretionOffsetType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "842"
+          },
+          "isOptional" : true
+        },
+        "DiscretionOffsetValue" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "389"
+          },
+          "isOptional" : true
+        },
+        "DiscretionRoundDirection" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "844"
+          },
+          "isOptional" : true
+        },
+        "DiscretionScope" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "846"
+          },
+          "isOptional" : true
+        },
+        "EffectiveTime" : {
+          "name" : "org.apache.kafka.connect.data.Timestamp",
+          "type" : "INT64",
+          "version" : 1,
+          "parameters" : {
+            "fix.field" : "168"
+          },
+          "isOptional" : true
+        },
+        "EncodedIssuer" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "349"
+          },
+          "isOptional" : true
+        },
+        "EncodedIssuerLen" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "348"
+          },
+          "isOptional" : true
+        },
+        "EncodedSecurityDesc" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "351"
+          },
+          "isOptional" : true
+        },
+        "EncodedSecurityDescLen" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "350"
+          },
+          "isOptional" : true
+        },
+        "EncodedText" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "355"
+          },
+          "isOptional" : true
+        },
+        "EncodedTextLen" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "354"
+          },
+          "isOptional" : true
+        },
+        "EndDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "917"
+          },
+          "isOptional" : true
+        },
+        "ExDestination" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "100"
+          },
+          "isOptional" : true
+        },
+        "ExecInst" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "18"
+          },
+          "isOptional" : true
+        },
+        "ExpireDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "432"
+          },
+          "isOptional" : true
+        },
+        "ExpireTime" : {
+          "name" : "org.apache.kafka.connect.data.Timestamp",
+          "type" : "INT64",
+          "version" : 1,
+          "parameters" : {
+            "fix.field" : "126"
+          },
+          "isOptional" : true
+        },
+        "Factor" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "228"
+          },
+          "isOptional" : true
+        },
+        "ForexReq" : {
+          "type" : "BOOLEAN",
+          "parameters" : {
+            "fix.field" : "121"
+          },
+          "isOptional" : true
+        },
+        "FundRenewWaiv" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "497"
+          },
+          "isOptional" : true
+        },
+        "GTBookingInst" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "427"
+          },
+          "isOptional" : true
+        },
+        "HandlInst" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "21"
+          },
+          "isOptional" : true
+        },
+        "IOIID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "23"
+          },
+          "isOptional" : true
+        },
+        "InstrRegistry" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "543"
+          },
+          "isOptional" : true
+        },
+        "InterestAccrualDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "874"
+          },
+          "isOptional" : true
+        },
+        "IssueDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "225"
+          },
+          "isOptional" : true
+        },
+        "Issuer" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "106"
+          },
+          "isOptional" : true
+        },
+        "LocaleOfIssue" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "472"
+          },
+          "isOptional" : true
+        },
+        "LocateReqd" : {
+          "type" : "BOOLEAN",
+          "parameters" : {
+            "fix.field" : "114"
+          },
+          "isOptional" : true
+        },
+        "MarginRatio" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "898"
+          },
+          "isOptional" : true
+        },
+        "MaturityDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "541"
+          },
+          "isOptional" : true
+        },
+        "MaturityMonthYear" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "200"
+          },
+          "isOptional" : true
+        },
+        "MaxFloor" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "111"
+          },
+          "isOptional" : true
+        },
+        "MaxShow" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "210"
+          },
+          "isOptional" : true
+        },
+        "MinQty" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "110"
+          },
+          "isOptional" : true
+        },
+        "MoneyLaunderingStatus" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "481"
+          },
+          "isOptional" : true
+        },
+        "NoAllocs" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "78"
+          },
+          "isOptional" : true
+        },
+        "NoEvents" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "864"
+          },
+          "isOptional" : true
+        },
+        "NoPartyIDs" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "453"
+          },
+          "isOptional" : true
+        },
+        "NoSecurityAltID" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "454"
+          },
+          "isOptional" : true
+        },
+        "NoStipulations" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "232"
+          },
+          "isOptional" : true
+        },
+        "NoTradingSessions" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "386"
+          },
+          "isOptional" : true
+        },
+        "NoUnderlyings" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "711"
+          },
+          "isOptional" : true
+        },
+        "OptAttribute" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "206"
+          },
+          "isOptional" : true
+        },
+        "OrdType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "40"
+          },
+          "isOptional" : true
+        },
+        "OrderCapacity" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "528"
+          },
+          "isOptional" : true
+        },
+        "OrderPercent" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "516"
+          },
+          "isOptional" : true
+        },
+        "OrderQty" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "38"
+          },
+          "isOptional" : true
+        },
+        "OrderQty2" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "192"
+          },
+          "isOptional" : true
+        },
+        "OrderRestrictions" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "529"
+          },
+          "isOptional" : true
+        },
+        "ParticipationRate" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "849"
+          },
+          "isOptional" : true
+        },
+        "PegLimitType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "837"
+          },
+          "isOptional" : true
+        },
+        "PegMoveType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "835"
+          },
+          "isOptional" : true
+        },
+        "PegOffsetType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "836"
+          },
+          "isOptional" : true
+        },
+        "PegOffsetValue" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "211"
+          },
+          "isOptional" : true
+        },
+        "PegRoundDirection" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "838"
+          },
+          "isOptional" : true
+        },
+        "PegScope" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "840"
+          },
+          "isOptional" : true
+        },
+        "Pool" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "691"
+          },
+          "isOptional" : true
+        },
+        "PositionEffect" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "77"
+          },
+          "isOptional" : true
+        },
+        "PreallocMethod" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "591"
+          },
+          "isOptional" : true
+        },
+        "PrevClosePx" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "140"
+          },
+          "isOptional" : true
+        },
+        "Price" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "44"
+          },
+          "isOptional" : true
+        },
+        "Price2" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "640"
+          },
+          "isOptional" : true
+        },
+        "PriceType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "423"
+          },
+          "isOptional" : true
+        },
+        "ProcessCode" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "81"
+          },
+          "isOptional" : true
+        },
+        "Product" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "460"
+          },
+          "isOptional" : true
+        },
+        "PutOrCall" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "201"
+          },
+          "isOptional" : true
+        },
+        "QtyType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "854"
+          },
+          "isOptional" : true
+        },
+        "QuoteID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "117"
+          },
+          "isOptional" : true
+        },
+        "RedemptionDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "240"
+          },
+          "isOptional" : true
+        },
+        "RegistID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "513"
+          },
+          "isOptional" : true
+        },
+        "RepoCollateralSecurityType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "239"
+          },
+          "isOptional" : true
+        },
+        "RepurchaseRate" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "227"
+          },
+          "isOptional" : true
+        },
+        "RepurchaseTerm" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "226"
+          },
+          "isOptional" : true
+        },
+        "RoundingDirection" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "468"
+          },
+          "isOptional" : true
+        },
+        "RoundingModulus" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "469"
+          },
+          "isOptional" : true
+        },
+        "SecondaryClOrdID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "526"
+          },
+          "isOptional" : true
+        },
+        "SecurityDesc" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "107"
+          },
+          "isOptional" : true
+        },
+        "SecurityExchange" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "207"
+          },
+          "isOptional" : true
+        },
+        "SecurityID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "48"
+          },
+          "isOptional" : true
+        },
+        "SecurityIDSource" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "22"
+          },
+          "isOptional" : true
+        },
+        "SecuritySubType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "762"
+          },
+          "isOptional" : true
+        },
+        "SecurityType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "167"
+          },
+          "isOptional" : true
+        },
+        "SettlCurrency" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "120"
+          },
+          "isOptional" : true
+        },
+        "SettlDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "64"
+          },
+          "isOptional" : true
+        },
+        "SettlDate2" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "193"
+          },
+          "isOptional" : true
+        },
+        "SettlType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "63"
+          },
+          "isOptional" : true
+        },
+        "Side" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "54"
+          },
+          "isOptional" : true
+        },
+        "Signature" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "89"
+          },
+          "isOptional" : true
+        },
+        "SignatureLength" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "93"
+          },
+          "isOptional" : true
+        },
+        "SolicitedFlag" : {
+          "type" : "BOOLEAN",
+          "parameters" : {
+            "fix.field" : "377"
+          },
+          "isOptional" : true
+        },
+        "Spread" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "218"
+          },
+          "isOptional" : true
+        },
+        "StartDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "916"
+          },
+          "isOptional" : true
+        },
+        "StateOrProvinceOfIssue" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "471"
+          },
+          "isOptional" : true
+        },
+        "StopPx" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "99"
+          },
+          "isOptional" : true
+        },
+        "StrikeCurrency" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "947"
+          },
+          "isOptional" : true
+        },
+        "StrikePrice" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "202"
+          },
+          "isOptional" : true
+        },
+        "Symbol" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "55"
+          },
+          "isOptional" : true
+        },
+        "SymbolSfx" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "65"
+          },
+          "isOptional" : true
+        },
+        "TargetStrategy" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "847"
+          },
+          "isOptional" : true
+        },
+        "TargetStrategyParameters" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "848"
+          },
+          "isOptional" : true
+        },
+        "TerminationType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "788"
+          },
+          "isOptional" : true
+        },
+        "Text" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "58"
+          },
+          "isOptional" : true
+        },
+        "TimeInForce" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "59"
+          },
+          "isOptional" : true
+        },
+        "TradeDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "75"
+          },
+          "isOptional" : true
+        },
+        "TradeOriginationDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "229"
+          },
+          "isOptional" : true
+        },
+        "TransactTime" : {
+          "name" : "org.apache.kafka.connect.data.Timestamp",
+          "type" : "INT64",
+          "version" : 1,
+          "parameters" : {
+            "fix.field" : "60"
+          },
+          "isOptional" : true
+        },
+        "Yield" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "236"
+          },
+          "isOptional" : true
+        },
+        "YieldCalcDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "701"
+          },
+          "isOptional" : true
+        },
+        "YieldRedemptionDate" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "696"
+          },
+          "isOptional" : true
+        },
+        "YieldRedemptionPrice" : {
+          "type" : "FLOAT64",
+          "parameters" : {
+            "fix.field" : "697"
+          },
+          "isOptional" : true
+        },
+        "YieldRedemptionPriceType" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "698"
+          },
+          "isOptional" : true
+        },
+        "YieldType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "235"
+          },
+          "isOptional" : true
+        }
+      }
+    },
+    "fieldValues" : [ {
+      "name" : "Account",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "1"
+        },
+        "isOptional" : true
+      },
+      "storage" : "Marcel"
+    }, {
+      "name" : "AccountType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "581"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "AcctIDSource",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "660"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "AgreementCurrency",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "918"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "AgreementDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "915"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "AgreementDesc",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "913"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "AgreementID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "914"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "AllocID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "70"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkCurveCurrency",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "220"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkCurveName",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "221"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkCurvePoint",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "222"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkPrice",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "662"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkPriceType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "663"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkSecurityID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "699"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BenchmarkSecurityIDSource",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "761"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BookingType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "775"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "BookingUnit",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "590"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CFICode",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "461"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CPProgram",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "875"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CPRegType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "876"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CancellationRights",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "480"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CashMargin",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "544"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CashOrderQty",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "152"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CheckSum",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "10"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ClOrdID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "11"
+        },
+        "isOptional" : true
+      },
+      "storage" : "13346"
+    }, {
+      "name" : "ClOrdLinkID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "583"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ClearingFeeIndicator",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "635"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CommCurrency",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "479"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CommType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "13"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Commission",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "12"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ComplianceID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "376"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ContractMultiplier",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "231"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ContractSettlMonth",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "667"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CountryOfIssue",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "470"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CouponPaymentDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "224"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CouponRate",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "223"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CoveredOrUncovered",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "203"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CreditRating",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "255"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Currency",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "15"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "CustOrderCapacity",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "582"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DatedDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "873"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DayBookingInst",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "589"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DeliveryType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "919"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Designation",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "494"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionInst",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "388"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionLimitType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "843"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionMoveType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "841"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionOffsetType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "842"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionOffsetValue",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "389"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionRoundDirection",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "844"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "DiscretionScope",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "846"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EffectiveTime",
+      "schema" : {
+        "name" : "org.apache.kafka.connect.data.Timestamp",
+        "type" : "INT64",
+        "version" : 1,
+        "parameters" : {
+          "fix.field" : "168"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedIssuer",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "349"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedIssuerLen",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "348"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedSecurityDesc",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "351"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedSecurityDescLen",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "350"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedText",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "355"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedTextLen",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "354"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EndDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "917"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ExDestination",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "100"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ExecInst",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "18"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ExpireDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "432"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ExpireTime",
+      "schema" : {
+        "name" : "org.apache.kafka.connect.data.Timestamp",
+        "type" : "INT64",
+        "version" : 1,
+        "parameters" : {
+          "fix.field" : "126"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Factor",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "228"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ForexReq",
+      "schema" : {
+        "type" : "BOOLEAN",
+        "parameters" : {
+          "fix.field" : "121"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "FundRenewWaiv",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "497"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "GTBookingInst",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "427"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "HandlInst",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "21"
+        },
+        "isOptional" : true
+      },
+      "storage" : "1"
+    }, {
+      "name" : "IOIID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "23"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "InstrRegistry",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "543"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "InterestAccrualDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "874"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "IssueDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "225"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Issuer",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "106"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "LocaleOfIssue",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "472"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "LocateReqd",
+      "schema" : {
+        "type" : "BOOLEAN",
+        "parameters" : {
+          "fix.field" : "114"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MarginRatio",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "898"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MaturityDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "541"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MaturityMonthYear",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "200"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MaxFloor",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "111"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MaxShow",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "210"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MinQty",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "110"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MoneyLaunderingStatus",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "481"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoAllocs",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "78"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoEvents",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "864"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoPartyIDs",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "453"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoSecurityAltID",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "454"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoStipulations",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "232"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoTradingSessions",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "386"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "NoUnderlyings",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "711"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "OptAttribute",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "206"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "OrdType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "40"
+        },
+        "isOptional" : true
+      },
+      "storage" : "2"
+    }, {
+      "name" : "OrderCapacity",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "528"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "OrderPercent",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "516"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "OrderQty",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "38"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "OrderQty2",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "192"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "OrderRestrictions",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "529"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ParticipationRate",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "849"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PegLimitType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "837"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PegMoveType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "835"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PegOffsetType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "836"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PegOffsetValue",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "211"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PegRoundDirection",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "838"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PegScope",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "840"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Pool",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "691"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PositionEffect",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "77"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PreallocMethod",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "591"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PrevClosePx",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "140"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Price",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "44"
+        },
+        "isOptional" : true
+      },
+      "storage" : 5.0
+    }, {
+      "name" : "Price2",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "640"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PriceType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "423"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "ProcessCode",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "81"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Product",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "460"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "PutOrCall",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "201"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "QtyType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "854"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "QuoteID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "117"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RedemptionDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "240"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RegistID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "513"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RepoCollateralSecurityType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "239"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RepurchaseRate",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "227"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RepurchaseTerm",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "226"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RoundingDirection",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "468"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RoundingModulus",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "469"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecondaryClOrdID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "526"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecurityDesc",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "107"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecurityExchange",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "207"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecurityID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "48"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecurityIDSource",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "22"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecuritySubType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "762"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SecurityType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "167"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SettlCurrency",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "120"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SettlDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "64"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SettlDate2",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "193"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SettlType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "63"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Side",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "54"
+        },
+        "isOptional" : true
+      },
+      "storage" : "1"
+    }, {
+      "name" : "Signature",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "89"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SignatureLength",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "93"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SolicitedFlag",
+      "schema" : {
+        "type" : "BOOLEAN",
+        "parameters" : {
+          "fix.field" : "377"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Spread",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "218"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "StartDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "916"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "StateOrProvinceOfIssue",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "471"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "StopPx",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "99"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "StrikeCurrency",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "947"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "StrikePrice",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "202"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Symbol",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "55"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SymbolSfx",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "65"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TargetStrategy",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "847"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TargetStrategyParameters",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "848"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TerminationType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "788"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Text",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "58"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TimeInForce",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "59"
+        },
+        "isOptional" : true
+      },
+      "storage" : "0"
+    }, {
+      "name" : "TradeDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "75"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TradeOriginationDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "229"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TransactTime",
+      "schema" : {
+        "name" : "org.apache.kafka.connect.data.Timestamp",
+        "type" : "INT64",
+        "version" : 1,
+        "parameters" : {
+          "fix.field" : "60"
+        },
+        "isOptional" : true
+      },
+      "storage" : 1267126792020
+    }, {
+      "name" : "Yield",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "236"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "YieldCalcDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "701"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "YieldRedemptionDate",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "696"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "YieldRedemptionPrice",
+      "schema" : {
+        "type" : "FLOAT64",
+        "parameters" : {
+          "fix.field" : "697"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "YieldRedemptionPriceType",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "698"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "YieldType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "235"
+        },
+        "isOptional" : true
+      }
+    } ]
+  }
+}

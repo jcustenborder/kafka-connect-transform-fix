@@ -1,0 +1,178 @@
+{
+  "message" : "8=FIX.4.4\u00019=94\u000135=3\u000134=214\u000149=A\u000150=U1\u000152=20100304-09:42:23.130\u000156=AB\u0001128=B1\u000145=176\u000158=txt\u0001371=15\u0001372=X\u0001373=1\u000110=058\u0001",
+  "struct" : {
+    "schema" : {
+      "name" : "fix44.Reject",
+      "type" : "STRUCT",
+      "isOptional" : false,
+      "fieldSchemas" : {
+        "CheckSum" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "10"
+          },
+          "isOptional" : true
+        },
+        "EncodedText" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "355"
+          },
+          "isOptional" : true
+        },
+        "EncodedTextLen" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "354"
+          },
+          "isOptional" : true
+        },
+        "RefMsgType" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "372"
+          },
+          "isOptional" : true
+        },
+        "RefSeqNum" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "45"
+          },
+          "isOptional" : true
+        },
+        "RefTagID" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "371"
+          },
+          "isOptional" : true
+        },
+        "SessionRejectReason" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "373"
+          },
+          "isOptional" : true
+        },
+        "Signature" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "89"
+          },
+          "isOptional" : true
+        },
+        "SignatureLength" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "93"
+          },
+          "isOptional" : true
+        },
+        "Text" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "58"
+          },
+          "isOptional" : true
+        }
+      }
+    },
+    "fieldValues" : [ {
+      "name" : "CheckSum",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "10"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedText",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "355"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "EncodedTextLen",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "354"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "RefMsgType",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "372"
+        },
+        "isOptional" : true
+      },
+      "storage" : "X"
+    }, {
+      "name" : "RefSeqNum",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "45"
+        },
+        "isOptional" : true
+      },
+      "storage" : 176
+    }, {
+      "name" : "RefTagID",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "371"
+        },
+        "isOptional" : true
+      },
+      "storage" : 15
+    }, {
+      "name" : "SessionRejectReason",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "373"
+        },
+        "isOptional" : true
+      },
+      "storage" : 1
+    }, {
+      "name" : "Signature",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "89"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SignatureLength",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "93"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Text",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "58"
+        },
+        "isOptional" : true
+      },
+      "storage" : "txt"
+    } ]
+  }
+}

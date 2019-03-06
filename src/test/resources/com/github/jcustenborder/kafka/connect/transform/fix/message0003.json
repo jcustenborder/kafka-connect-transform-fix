@@ -1,0 +1,77 @@
+{
+  "message" : "8=FIX.4.2\u00019=42\u000135=0\u000149=A\u000156=B\u000134=12\u000152=20100304-07:59:30\u000110=185\u0001",
+  "struct" : {
+    "schema" : {
+      "name" : "fix42.Heartbeat",
+      "type" : "STRUCT",
+      "isOptional" : false,
+      "fieldSchemas" : {
+        "CheckSum" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "10"
+          },
+          "isOptional" : true
+        },
+        "Signature" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "89"
+          },
+          "isOptional" : true
+        },
+        "SignatureLength" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "93"
+          },
+          "isOptional" : true
+        },
+        "TestReqID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "112"
+          },
+          "isOptional" : true
+        }
+      }
+    },
+    "fieldValues" : [ {
+      "name" : "CheckSum",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "10"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "Signature",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "89"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SignatureLength",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "93"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "TestReqID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "112"
+        },
+        "isOptional" : true
+      }
+    } ]
+  }
+}

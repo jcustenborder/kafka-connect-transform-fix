@@ -1,0 +1,95 @@
+{
+  "message" : "8=FIX.4.2\u00019=196\u000135=X\u000149=A\u000156=B\u000134=12\u000152=20100318-03:21:11.364\u0001262=A\u0001268=2\u0001279=0\u0001269=0\u0001278=BID\u000155=EUR/USD\u0001270=1.37215\u000115=EUR\u0001271=2500000\u0001346=1\u0001279=0\u0001269=1\u0001278=OFFER\u000155=EUR/USD\u0001270=1.37224\u000115=EUR\u0001271=2503200\u0001346=1\u000110=171\u0001",
+  "struct" : {
+    "schema" : {
+      "name" : "fix42.MarketDataIncrementalRefresh",
+      "type" : "STRUCT",
+      "isOptional" : false,
+      "fieldSchemas" : {
+        "CheckSum" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "10"
+          },
+          "isOptional" : true
+        },
+        "MDReqID" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "262"
+          },
+          "isOptional" : true
+        },
+        "NoMDEntries" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "268"
+          },
+          "isOptional" : true
+        },
+        "Signature" : {
+          "type" : "STRING",
+          "parameters" : {
+            "fix.field" : "89"
+          },
+          "isOptional" : true
+        },
+        "SignatureLength" : {
+          "type" : "INT32",
+          "parameters" : {
+            "fix.field" : "93"
+          },
+          "isOptional" : true
+        }
+      }
+    },
+    "fieldValues" : [ {
+      "name" : "CheckSum",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "10"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "MDReqID",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "262"
+        },
+        "isOptional" : true
+      },
+      "storage" : "A"
+    }, {
+      "name" : "NoMDEntries",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "268"
+        },
+        "isOptional" : true
+      },
+      "storage" : 2
+    }, {
+      "name" : "Signature",
+      "schema" : {
+        "type" : "STRING",
+        "parameters" : {
+          "fix.field" : "89"
+        },
+        "isOptional" : true
+      }
+    }, {
+      "name" : "SignatureLength",
+      "schema" : {
+        "type" : "INT32",
+        "parameters" : {
+          "fix.field" : "93"
+        },
+        "isOptional" : true
+      }
+    } ]
+  }
+}
