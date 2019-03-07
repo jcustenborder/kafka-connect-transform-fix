@@ -16,9 +16,7 @@
 package com.github.jcustenborder.kafka.connect.transform.fix;
 
 import com.github.jcustenborder.kafka.connect.utils.BaseDocumentationTest;
-import org.junit.jupiter.api.Disabled;
 
-@Disabled
 public class DocumentationTest extends BaseDocumentationTest {
 
   @Override
