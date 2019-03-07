@@ -1,5 +1,5 @@
 {
-  "message" : "8=FIX.4.2\u00019=226\u000135=8\u0001128=XYZ\u000134=4\u000149=CCG\u000156=ABC_DEFG01\u000152=20090323- 15:40:35\u000155=CVS\u000137=NF 0542/03232009\u000111=NF 0542/03232009\u000117=0\u000120=0\u000139=0\u0001150=0\u000154=1\u000138=100\u000140=1\u000159=0\u000131=0\u000132=0\u000114=0\u00016=0\u0001151=100\u000160=20090323-15:40:30\u000158=New order\u000130=N\u0001207=N\u000147=A\u000110=236\u0001",
+  "message" : "8=FIX.4.2\u00019=377\u000135=8\u0001128=XYZ\u000134=69\u000149=CCG\u000156=ABC_DEFG04\u000152=20090402- 18:20:29\u000155=PAC\u000137=NF 0644/04022009\u000111=NF 0644/04022009\u000117=NF 0644/04022009 001001002\u000120=2\u000139=2\u0001150=2\u000154=1\u000138=100\u000140=1\u000159=0\u000131=16.77\u000132=100\u000114=0\u00016=0\u0001151=0\u000160=20090402-18:20:28\u000147=A\u00019579=0000100002\u00019440=001001002\u000119=NF 0644/04022009 001001001\u00019704=0000100001\u000129=1\u00019425=5\u0001382=1\u0001375=BARC\u0001337=0000\u0001437=100\u0001438=1420\u000163=0\u0001207=N\u000130=N\u000110=233\u0001",
   "struct" : {
     "schema" : {
       "name" : "fix42.ExecutionReport",
@@ -725,7 +725,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "NF 0542/03232009"
+      "storage" : "NF 0644/04022009"
     }, {
       "name" : "ClearingAccount",
       "schema" : {
@@ -945,7 +945,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "NF 0644/04022009 001001002"
     }, {
       "name" : "ExecInst",
       "schema" : {
@@ -963,7 +963,8 @@
           "fix.field" : "19"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : "NF 0644/04022009 001001001"
     }, {
       "name" : "ExecRestatementReason",
       "schema" : {
@@ -982,7 +983,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "2"
     }, {
       "name" : "ExecType",
       "schema" : {
@@ -992,7 +993,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "2"
     }, {
       "name" : "ExpireDate",
       "schema" : {
@@ -1084,7 +1085,8 @@
           "fix.field" : "29"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : "1"
     }, {
       "name" : "LastForwardPoints",
       "schema" : {
@@ -1113,7 +1115,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 0.0
+      "storage" : 16.77
     }, {
       "name" : "LastShares",
       "schema" : {
@@ -1123,7 +1125,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 0.0
+      "storage" : 100.0
     }, {
       "name" : "LastSpotRate",
       "schema" : {
@@ -1142,7 +1144,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 100.0
+      "storage" : 0.0
     }, {
       "name" : "ListID",
       "schema" : {
@@ -1214,7 +1216,8 @@
           "fix.field" : "382"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : 1
     }, {
       "name" : "OpenClose",
       "schema" : {
@@ -1251,7 +1254,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "2"
     }, {
       "name" : "OrdType",
       "schema" : {
@@ -1271,7 +1274,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "NF 0542/03232009"
+      "storage" : "NF 0644/04022009"
     }, {
       "name" : "OrderQty",
       "schema" : {
@@ -1436,7 +1439,8 @@
           "fix.field" : "63"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : "0"
     }, {
       "name" : "Side",
       "schema" : {
@@ -1501,7 +1505,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "CVS"
+      "storage" : "PAC"
     }, {
       "name" : "SymbolSfx",
       "schema" : {
@@ -1519,8 +1523,7 @@
           "fix.field" : "58"
         },
         "isOptional" : true
-      },
-      "storage" : "New order"
+      }
     }, {
       "name" : "TimeInForce",
       "schema" : {
@@ -1560,7 +1563,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 1237822830000
+      "storage" : 1238696428000
     } ]
   }
 }

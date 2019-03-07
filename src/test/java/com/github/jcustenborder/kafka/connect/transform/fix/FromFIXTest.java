@@ -24,10 +24,13 @@ import org.apache.kafka.connect.data.Struct;
 import org.apache.kafka.connect.errors.DataException;
 import org.apache.kafka.connect.sink.SinkRecord;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.util.Arrays;
@@ -40,6 +43,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
 public class FromFIXTest {
+  private static final Logger log = LoggerFactory.getLogger(FromFIXTest.class);
   File testsPath = new File("src/test/resources/com/github/jcustenborder/kafka/connect/transform/fix");
   FromFIX.Value transform;
 
@@ -49,6 +53,11 @@ public class FromFIXTest {
     this.transform.configure(
         ImmutableMap.of()
     );
+  }
+
+  @BeforeAll
+  public static void beforeAll() {
+    ObjectMapperFactory.INSTANCE.configure(SerializationFeature.INDENT_OUTPUT, true);
   }
 
   @AfterEach
@@ -63,23 +72,24 @@ public class FromFIXTest {
     ObjectMapperFactory.INSTANCE.configure(SerializationFeature.INDENT_OUTPUT, true);
     return Arrays.stream(
         this.testsPath.listFiles()
-    ).map(f -> dynamicTest(f.getName(), () -> {
-      TestCase testCase = ObjectMapperFactory.INSTANCE.readValue(f, TestCase.class);
-
-      final ConnectRecord inputRecord = new SinkRecord(
-          "test",
-          1,
-          null,
-          null,
-          Schema.STRING_SCHEMA,
-          testCase.message,
-          new Date().getTime()
-      );
-      final ConnectRecord outputRecord = this.transform.apply(inputRecord);
-      assertTrue(outputRecord.value() instanceof Struct, "outputRecord.value() should be a struct.");
-      Struct actual = (Struct) outputRecord.value();
-      assertStruct(testCase.struct, actual);
-    }));
+    ).sorted()
+        .map(f -> dynamicTest(f.getName(), () -> {
+          TestCase testCase = ObjectMapperFactory.INSTANCE.readValue(f, TestCase.class);
+          log.trace(ObjectMapperFactory.INSTANCE.writeValueAsString(testCase.message));
+          final ConnectRecord inputRecord = new SinkRecord(
+              "test",
+              1,
+              null,
+              null,
+              Schema.STRING_SCHEMA,
+              testCase.message,
+              new Date().getTime()
+          );
+          final ConnectRecord outputRecord = this.transform.apply(inputRecord);
+          assertTrue(outputRecord.value() instanceof Struct, "outputRecord.value() should be a struct.");
+          Struct actual = (Struct) outputRecord.value();
+          assertStruct(testCase.struct, actual);
+        }));
   }
 
   @Test

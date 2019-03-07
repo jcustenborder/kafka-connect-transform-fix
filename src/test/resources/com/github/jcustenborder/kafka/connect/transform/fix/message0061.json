@@ -1,5 +1,5 @@
 {
-  "message" : "8=FIX.4.2\u00019=226\u000135=8\u0001128=XYZ\u000134=4\u000149=CCG\u000156=ABC_DEFG01\u000152=20090323- 15:40:35\u000155=CVS\u000137=NF 0542/03232009\u000111=NF 0542/03232009\u000117=0\u000120=0\u000139=0\u0001150=0\u000154=1\u000138=100\u000140=1\u000159=0\u000131=0\u000132=0\u000114=0\u00016=0\u0001151=100\u000160=20090323-15:40:30\u000158=New order\u000130=N\u0001207=N\u000147=A\u000110=236\u0001",
+  "message" : "8=FIX.4.2\u00019=196\u000135=8\u0001128=XYZ\u0001142=100\u000134=58\u000149=CCG\u000156=ABC_DEFG04\u000152=20090402-18:15:46\u000111=NF 0646/04022009\u00016=0\u000114=0\u000117=0\u000120=0\u000131=0\u000132=0\u000137=NF 0646/04022009\u000138=100\u000139=0\u000147=A\u000154=1\u000155=PAC\u000158=New order\u0001150=0\u0001207=N\u000130=N\u000110=77\u0001",
   "struct" : {
     "schema" : {
       "name" : "fix42.ExecutionReport",
@@ -725,7 +725,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "NF 0542/03232009"
+      "storage" : "NF 0646/04022009"
     }, {
       "name" : "ClearingAccount",
       "schema" : {
@@ -1141,8 +1141,7 @@
           "fix.field" : "151"
         },
         "isOptional" : true
-      },
-      "storage" : 100.0
+      }
     }, {
       "name" : "ListID",
       "schema" : {
@@ -1260,8 +1259,7 @@
           "fix.field" : "40"
         },
         "isOptional" : true
-      },
-      "storage" : "1"
+      }
     }, {
       "name" : "OrderID",
       "schema" : {
@@ -1271,7 +1269,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "NF 0542/03232009"
+      "storage" : "NF 0646/04022009"
     }, {
       "name" : "OrderQty",
       "schema" : {
@@ -1501,7 +1499,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "CVS"
+      "storage" : "PAC"
     }, {
       "name" : "SymbolSfx",
       "schema" : {
@@ -1529,8 +1527,7 @@
           "fix.field" : "59"
         },
         "isOptional" : true
-      },
-      "storage" : "0"
+      }
     }, {
       "name" : "TradeDate",
       "schema" : {
@@ -1559,8 +1556,7 @@
           "fix.field" : "60"
         },
         "isOptional" : true
-      },
-      "storage" : 1237822830000
+      }
     } ]
   }
 }

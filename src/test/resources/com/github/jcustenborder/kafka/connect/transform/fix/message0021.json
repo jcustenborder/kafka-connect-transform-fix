@@ -1,5 +1,5 @@
 {
-  "message" : "8=FIX.4.2\u00019=226\u000135=8\u0001128=XYZ\u000134=4\u000149=CCG\u000156=ABC_DEFG01\u000152=20090323- 15:40:35\u000155=CVS\u000137=NF 0542/03232009\u000111=NF 0542/03232009\u000117=0\u000120=0\u000139=0\u0001150=0\u000154=1\u000138=100\u000140=1\u000159=0\u000131=0\u000132=0\u000114=0\u00016=0\u0001151=100\u000160=20090323-15:40:30\u000158=New order\u000130=N\u0001207=N\u000147=A\u000110=236\u0001",
+  "message" : "8=FIX.4.2\u00019=394\u000135=8\u0001128=LZJ\u000134=23\u000149=CCG\u000156=LEH_LZJ02\u000152=20100303- 16:31:36\u000155=MMM\u000137=NF 0049/03032010\u000111=NF 0049/03032010\u000117=NF 0049/03032010 001001001\u000120=0\u000139=2\u0001150=2\u000154=1\u000138=1000\u000140=1\u000159=0\u000131=75.8700\u000132=1000\u000114=0\u00016=0\u0001151=0\u000160=20100303-16:31:37\u000158=Fill\u00011=ABC123ZYX\u000130=N\u000176=0210\u0001207=N\u000147=A\u00019430=NX\u00019483=000016\u00019570=D/EDGA\u0001382=1\u0001375=TOD\u0001337=0000\u0001437=1000\u0001438=1133\u00019579=0000100001\u00019433=0210\u000129=1\u000163=0\u00019440=001001001\u000110=196\u0001",
   "struct" : {
     "schema" : {
       "name" : "fix42.ExecutionReport",
@@ -687,7 +687,8 @@
           "fix.field" : "1"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : "ABC123ZYX"
     }, {
       "name" : "AvgPx",
       "schema" : {
@@ -725,7 +726,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "NF 0542/03232009"
+      "storage" : "NF 0049/03032010"
     }, {
       "name" : "ClearingAccount",
       "schema" : {
@@ -935,7 +936,8 @@
           "fix.field" : "76"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : "0210"
     }, {
       "name" : "ExecID",
       "schema" : {
@@ -945,7 +947,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "NF 0049/03032010 001001001"
     }, {
       "name" : "ExecInst",
       "schema" : {
@@ -992,7 +994,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "2"
     }, {
       "name" : "ExpireDate",
       "schema" : {
@@ -1113,7 +1115,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 0.0
+      "storage" : 75.87
     }, {
       "name" : "LastShares",
       "schema" : {
@@ -1123,7 +1125,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 0.0
+      "storage" : 1000.0
     }, {
       "name" : "LastSpotRate",
       "schema" : {
@@ -1142,7 +1144,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 100.0
+      "storage" : 0.0
     }, {
       "name" : "ListID",
       "schema" : {
@@ -1214,7 +1216,8 @@
           "fix.field" : "382"
         },
         "isOptional" : true
-      }
+      },
+      "storage" : 1
     }, {
       "name" : "OpenClose",
       "schema" : {
@@ -1251,7 +1254,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "0"
+      "storage" : "2"
     }, {
       "name" : "OrdType",
       "schema" : {
@@ -1271,7 +1274,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "NF 0542/03232009"
+      "storage" : "NF 0049/03032010"
     }, {
       "name" : "OrderQty",
       "schema" : {
@@ -1281,7 +1284,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 100.0
+      "storage" : 1000.0
     }, {
       "name" : "OrderQty2",
       "schema" : {
@@ -1501,7 +1504,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "CVS"
+      "storage" : "MMM"
     }, {
       "name" : "SymbolSfx",
       "schema" : {
@@ -1520,7 +1523,7 @@
         },
         "isOptional" : true
       },
-      "storage" : "New order"
+      "storage" : "Fill"
     }, {
       "name" : "TimeInForce",
       "schema" : {
@@ -1560,7 +1563,7 @@
         },
         "isOptional" : true
       },
-      "storage" : 1237822830000
+      "storage" : 1267633897000
     } ]
   }
 }
