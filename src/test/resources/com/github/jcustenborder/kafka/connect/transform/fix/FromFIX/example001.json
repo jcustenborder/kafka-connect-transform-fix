@@ -1,0 +1,24 @@
+{
+  "note" : "The serialized value written to Kafka will be dependant upon the Converter the connector is configured to use.",
+  "input" : {
+    "topic" : "test",
+    "kafkaPartition" : 1,
+    "keySchema" : {
+      "type" : "STRING",
+      "isOptional" : true
+    },
+    "key" : "asdf",
+    "valueSchema" : {
+      "type" : "STRING",
+      "isOptional" : true
+    },
+    "value" : "8=FIX.4.2\u00019=145\u000135=D\u000134=4\u000149=ABC_DEFG01\u000152=20090323-15:40:29\u000156=CCG\u0001115=XYZ\u000111=NF 0542/03232009\u000154=1\u000138=100\u000155=CVS\u000140=1\u000159=0\u000147=A\u000160=20090323-15:40:29\u000121=1\u0001207=N\u000110=194\u0001",
+    "timestamp" : 1530286549123,
+    "timestampType" : "CREATE_TIME",
+    "offset" : 91283741,
+    "headers" : [ ]
+  },
+  "description" : "This example will parse a String from the value of the message, transforming it to a FIX structure. The input and output below are a JSON representation of a ConnectRecord. The value of the input record contains a FIX encoded message. The value of the output record contains a parsed representation of the FIX message as a Connect Struct.",
+  "name" : "Simple",
+  "childClass" : "Value"
+}
