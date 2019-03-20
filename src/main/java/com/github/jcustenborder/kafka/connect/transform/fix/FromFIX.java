@@ -38,7 +38,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-@Title("FromFix(value)")
+@Title("FromFix")
 @Description("This transformation is used to read FIX encoded messages and convert them to a " +
     "representation of FIX that downstream systems can understand.")
 public abstract class FromFIX<R extends ConnectRecord<R>> extends BaseKeyValueTransformation<R> {

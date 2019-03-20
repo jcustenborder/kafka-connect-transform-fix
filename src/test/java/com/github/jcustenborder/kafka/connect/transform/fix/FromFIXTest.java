@@ -72,7 +72,9 @@ public class FromFIXTest {
     ObjectMapperFactory.INSTANCE.configure(SerializationFeature.INDENT_OUTPUT, true);
     return Arrays.stream(
         this.testsPath.listFiles()
-    ).sorted()
+    )
+        .filter(File::isFile)
+        .sorted()
         .map(f -> dynamicTest(f.getName(), () -> {
           TestCase testCase = ObjectMapperFactory.INSTANCE.readValue(f, TestCase.class);
           log.trace(ObjectMapperFactory.INSTANCE.writeValueAsString(testCase.message));
