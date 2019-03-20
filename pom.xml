@@ -71,11 +71,23 @@
             <groupId>org.quickfixj</groupId>
             <artifactId>quickfixj-core</artifactId>
             <version>${quickfix4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.quickfixj</groupId>
             <artifactId>quickfixj-messages-all</artifactId>
             <version>${quickfix4j.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
     <build>
@@ -96,6 +108,9 @@
                     <title>Kafka Connect FIX Transformations</title>
                     <supportUrl>${pom.issueManagement.url}</supportUrl>
                     <supportSummary>Support provided through community involvement.</supportSummary>
+                    <excludes>
+                        <exclude>org.reflections:reflections</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>

@@ -8,7 +8,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.github.jcustenborder.kafka.connect.transform.fix" level="TRACE" />
+    <logger name="com.github.jcustenborder.kafka.connect.transform.fix" level="INFO" />
     <logger name="org.reflections" level="ERROR" />
 
     <root level="INFO">
