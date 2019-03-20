@@ -16,7 +16,6 @@
 package com.github.jcustenborder.kafka.connect.transform.fix;
 
 import com.github.jcustenborder.kafka.connect.utils.config.Description;
-import com.github.jcustenborder.kafka.connect.utils.config.DocumentationTip;
 import com.github.jcustenborder.kafka.connect.utils.config.Title;
 import com.github.jcustenborder.kafka.connect.utils.transformation.BaseKeyValueTransformation;
 import com.google.common.base.Strings;
@@ -39,6 +38,9 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
+@Title("FromFix(value)")
+@Description("This transformation is used to read FIX encoded messages and convert them to a " +
+    "representation of FIX that downstream systems can understand.")
 public abstract class FromFIX<R extends ConnectRecord<R>> extends BaseKeyValueTransformation<R> {
   private static final Logger log = LoggerFactory.getLogger(FromFIX.class);
 
@@ -105,18 +107,12 @@ public abstract class FromFIX<R extends ConnectRecord<R>> extends BaseKeyValueTr
     this.messageFactory = new DefaultMessageFactory();
   }
 
-  @Title("FromXML(Key)")
-  @Description("This transformation is used to read FIX encoded messages and converter them to a fix Structure.")
-  @DocumentationTip("This transformation is used to manipulate fields in the Key of the record.")
   public static class Key<R extends ConnectRecord<R>> extends FromFIX<R> {
     public Key() {
       super(true);
     }
   }
 
-  @Title("FromXML(value)")
-  @Description("This transformation is used to read FIX encoded messages and converter them to a fix Structure.")
-  @DocumentationTip("This transformation is used to manipulate fields in the Key of the record.")
   public static class Value<R extends ConnectRecord<R>> extends FromFIX<R> {
     public Value() {
       super(false);

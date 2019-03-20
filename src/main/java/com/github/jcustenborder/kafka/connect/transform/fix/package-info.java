@@ -17,7 +17,11 @@
 @Title("FIX Transformations")
 @Introduction("This project provides transformations that can be utilised to process messages that " +
     "are encoded with the FIX protocol.")
+@PluginName("kafka-connect-transform-fix")
+@PluginOwner("jcustenborder")
 package com.github.jcustenborder.kafka.connect.transform.fix;
 
 import com.github.jcustenborder.kafka.connect.utils.config.Introduction;
+import com.github.jcustenborder.kafka.connect.utils.config.PluginName;
+import com.github.jcustenborder.kafka.connect.utils.config.PluginOwner;
 import com.github.jcustenborder.kafka.connect.utils.config.Title;
